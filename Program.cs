@@ -113,8 +113,8 @@ namespace FibonacciFinder
                     BigInteger lastInt2 = Fib[Fib.Count - 2];
                     Fib.Add(lastInt1 + lastInt2);
 
-                    if (Fib.Last().ToString().Length > 165) Console.WriteLine(i + " / " + numToFind + " : (too long to display *" + Fib.Last().ToString().Length + " chars*)");
-                    else Console.WriteLine(i + "/" + numToFind + " : " + String.Format("{0:n0}", Fib.Last()));
+                    if (Fib.Last().ToString().Length > 165) Console.WriteLine(String.Format("{0:n0}", i) + " / " + String.Format("{0:n0}", numToFind) + " : (too long to display *" + Fib.Last().ToString().Length + " chars*)");
+                    else Console.WriteLine(String.Format("{0:n0}", i) + "/" + String.Format("{0:n0}", numToFind) + " : " + String.Format("{0:n0}", Fib.Last()));
                 }
 
                 Console.WriteLine();
